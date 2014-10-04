@@ -67,6 +67,28 @@
 		    android:text="@string/mark_as_done"
 			android:textAppearance="?android:attr/textAppearanceMedium" />
 
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp" >
+		    
+		    <Button
+		        android:id="@+id/saveButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/save"
+		        android:textStyle="bold" />
+
+		    <Button
+		        android:id="@+id/deleteButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15dp"
+		        android:text="@string/delete"
+		        android:textColor="#ff0000" />
+
+		</LinearLayout>
+
 	</LinearLayout>
 
 </RelativeLayout>

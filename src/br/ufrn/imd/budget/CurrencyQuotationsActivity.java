@@ -17,6 +17,15 @@ public class CurrencyQuotationsActivity extends ListActivity {
 	}
 
 	@Override
+	protected void onStart() {
+		super.onStart();
+
+		progressDialog = ProgressDialog.show(this, "", "Carregando cotações. Aguarde...", true);
+
+        new CurrencyQuotationsFromYahooTask(this).execute();
+	}
+
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.currency_quotations, menu);
@@ -35,15 +44,6 @@ public class CurrencyQuotationsActivity extends ListActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	@Override
-	protected void onStart() {
-		super.onStart();
-
-		progressDialog = ProgressDialog.show(this, "", "Carregando cotações. Aguarde...", true);
-
-        new CurrencyQuotationsFromYahooTask(this).execute();
-	}
-	
 	public ProgressDialog getProgressDialog() {
 		return progressDialog;
 	}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Orçamento Doméstico</string>
+    <string name="action_settings">Configurações</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_new_expense">Novo Pagamento</string>
+    <string name="add_new_income">Novo Recebimento</string>
+    <string name="balance">Saldo previsto</string>
+    <string name="currency_quotations">Cotação de moedas</string>
+    <string name="due_date">Vencimento</string>
+    <string name="edit_expense">Editar pagamento</string>
+    <string name="edit_income">Editar recebimento</string>
+    <string name="expenses">Pagamentos</string>
+    <string name="incomes">Recebimentos</string>
+    <string name="mark_as_done">MarkAsDone</string>
+    <string name="mark_as_paid">Marcar como pago</string>
+    <string name="mark_as_received">Marcar como recebido</string>
+    <string name="title">Título</string>
+    <string name="title_activity_currency_quotations">Cotação de moedas para hoje</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+    <string name="title_activity_items">ItemsActivity</string>
+    <string name="value">Valor</string>
+
+</resources>
